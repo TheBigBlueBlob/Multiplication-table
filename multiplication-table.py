@@ -25,3 +25,9 @@ columns = int(input("Width of multiplication table: "))
 rows = int(input("Length of multiplication table: "))
 topRow = list(range(1,columns))
 leftColumn = list(range(1,rows))
+loop = 0
+counter = 0
+while loop < topRow:
+    print(x*leftColumn[counter] for x in topRow)
+    counter += 1
+    
