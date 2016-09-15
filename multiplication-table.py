@@ -27,7 +27,7 @@ topRow = list(range(1,columns))
 leftColumn = list(range(1,rows))
 loop = 0
 counter = 0
-while loop < topRow:
+while loop < columns:
     print(x*leftColumn[counter] for x in topRow)
     counter += 1
     
