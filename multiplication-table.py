@@ -23,11 +23,10 @@ Height of multiplication table: 8
 """
 columns = int(input("Width of multiplication table: "))
 rows = int(input("Length of multiplication table: "))
-topRow = list(range(1,columns))
-leftColumn = list(range(1,rows))
-loop = 0
+topRow = list(range(1,columns+1))
+leftColumn = list(range(1,rows+1))
 counter = 0
-while loop < columns:
-    print(x*leftColumn[counter] for x in topRow)
+while counter < columns:
+    print(list(x*leftColumn[counter] for x in topRow))
     counter += 1
     
