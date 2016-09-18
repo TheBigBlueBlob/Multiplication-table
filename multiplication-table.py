@@ -26,9 +26,9 @@ rows = int(input("Length of multiplication table: "))
 topRow = list(range(1,columns+1))
 leftColumn = list(range(1,rows+1))
 counter = 0
-while counter < columns:
-    finalList = list(x*leftColumn[counter] for x in topRow)
+while counter < rows:
+    print(list(x*leftColumn[counter] for x in topRow))
     counter += 1
-    print("{0}".format(finalList))
+    
     
     
