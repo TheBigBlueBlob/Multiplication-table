@@ -24,4 +24,4 @@ Height of multiplication table: 8
 columns = int(input("Width of multiplication table: "))
 rows = int(input("Length of multiplication table: "))
 for row in range(1,rows+1):
-    print(*("{0<:3}".format(row*col) for col in range(1, columns+1)))
+    print(*("{0:>3}".format(row*col) for col in range(1, columns+1)))
